@@ -1,0 +1,14 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="hr" transaction-type="RESOURCE_LOCAL">
+        <class>examples.model.Employee</class>
+        <class>examples.model.Department</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:derby://localhost:1527/nullUserTxTesting;create=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="APP"/>
+            <property name="jakarta.persistence.jdbc.password" value="APP"/>
+            <!-- enable this property to see SQL and other logging -->
+            <!-- property name="eclipselink.logging.level" value="FINE"/ -->
+        </properties>
+    </persistence-unit>
+</persistence>

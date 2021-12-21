@@ -1,0 +1,11 @@
+Testsuite: examples.stateless.DepartmentServiceBeanTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.144 sec
+
+Testcase: testAssignEmployeeToDepartment took 0.105 sec
+	Caused an ERROR
+No Persistence provider for EntityManager named hr
+jakarta.persistence.PersistenceException: No Persistence provider for EntityManager named hr
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:86)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at examples.stateless.DepartmentServiceBeanTest.setUp(DepartmentServiceBeanTest.java:20)
+

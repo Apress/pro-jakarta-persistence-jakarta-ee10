@@ -1,0 +1,12 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="EmployeeService">
+        <jta-data-source>jdbc/persistingWithRelationshipsCascade</jta-data-source>
+        <validation-mode>NONE</validation-mode>
+        <properties>
+            <property name="eclipselink.target-server" value="Glassfish"/>
+            <property name="eclipselink.target-database" 
+                      value="org.eclipse.persistence.platform.database.DerbyPlatform"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+        </properties>
+    </persistence-unit>
+</persistence>
