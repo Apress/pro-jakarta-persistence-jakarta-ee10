@@ -1,0 +1,16 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="EmployeeService">
+        <jta-data-source>jdbc/schemaGenCreateTarget</jta-data-source>
+        <properties>
+            <property name="jakarta.persistence.schema-generation.scripts.action" 
+                      value="create"/>
+            <property name="jakarta.persistence.schema-generation.scripts.create-target" 
+                      value="file:///c:/scripts/create.ddl"/>
+
+            <property name="eclipselink.target-server" value="Glassfish"/>
+            <property name="eclipselink.target-database" 
+                      value="org.eclipse.persistence.platform.database.DerbyPlatform"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+        </properties>
+    </persistence-unit>
+</persistence>
