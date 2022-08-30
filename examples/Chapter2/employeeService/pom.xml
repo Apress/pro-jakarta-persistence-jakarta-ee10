@@ -9,9 +9,10 @@
     <name>Chapter 2 Employees</name>
     <description>Chapter 2 Employees</description>
 
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <properties>
 
+        <derby.version>10.15.2.0</derby.version>
     </properties>
     <dependencies>
         <dependency>
@@ -24,9 +25,38 @@
             <artifactId>eclipselink</artifactId>
             <version>3.1.0-M1</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbyclient</artifactId>
+            <version>${derby.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbyshared</artifactId>
+            <version>${derby.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbytools</artifactId>
+            <version>${derby.version}</version>
+        </dependency>
+        <!-- Test dependencies below -->
+
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>${derby.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>etc/persistence</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
