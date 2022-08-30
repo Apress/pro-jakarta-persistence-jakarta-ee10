@@ -15,8 +15,7 @@ However that by its very nature makes debugging problems straight forward and pr
 
 This repository accompanies [*Pro Jakarta Persistence in Jakarta EE 10*](https://link.springer.com/book/10.1007/978-1-4842-7443-9) by  Lukas Jungmann, Mike Keith, Merrick Schincariol, and Massimo Nardone (Apress, 2022).
 
-# Cover
-[Cover image](978-1-4842-7442-2.jpg)
+![Cover image](978-1-4842-7442-2.jpg)
 
 Download the files as a zip using the green button, or clone the repository to your machine using Git.
 
