@@ -8,9 +8,10 @@ This will be a slow linear process, added as I go through the book. I will start
 Eventually , a parent pom will emerge but not at first.
 
 ## Maven vs Gradle
-While I have used both, maven by its very design is a constrained, sometimes inflexible build system out of the box.
+While I have used both, maven by its very design is a constrained, somewhat inflexible build system out of the box.
 However, that inflexibility by its very nature makes debugging problems straight forward and predictable, 
-and hence its choice.
+and hence its choice. In addition, while IDE's can run/build Gradle projects using gradle, the use of maven allows your
+IDE to convert a project it into its internal build system, which is an advantage.
 
 # Apress Source Code
 
