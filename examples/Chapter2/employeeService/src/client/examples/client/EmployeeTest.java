@@ -15,6 +15,16 @@ public class EmployeeTest {
         EntityManagerFactory emf = 
                 Persistence.createEntityManagerFactory("EmployeeService");
         EntityManager em = emf.createEntityManager();
+
+/*  Need to get derby to auto generate DDL
+        em.getTransaction().begin();
+
+        String sql = "CREATE TABLE EMPLOYEE (id int primary key, name varchar(128),salary int)";
+        em.getTransaction().
+        statement.execute(sql);
+
+        em.getTransaction().commit();
+*/
         EmployeeService service = new EmployeeService(em);
         
         //  create and persist an employee
