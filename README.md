@@ -1,6 +1,10 @@
 # Add a maven build system for:  *Pro Jakarta Persistence in Jakarta EE 10*
 
-The goal is to provide a 'it just works' experience for myself and others.
+# To use
+Import the pom.xml into your IDE.
+
+# Goal: It Just works
+To provide a 'it just works' experience for myself that others should be able to use.
 This means:
 * Required libraries will be downloaded
 * DB will be run in memory to remove setup and installation effort whenever possible
@@ -41,16 +45,16 @@ go ahead and create separate modules since its unlikely that this fork will get 
 
 **Stale Tech Stack**
 
+With no dependency management system and JARS checked into Git, knowing what is used is difficult.
 Technology changes quickly, vulnerabilities seem to pop up everywhere, so professional developers eventually learn
 the wisdom of keeping their tech stack up to date for applications. Unfortunately, this repository uses EOL  
 libraries such as JUnit 4 for their development. There is also an Oracle stored procedure JAR from almost 20 years ago I 
-will eventually have to come to terms with. So do take note of weather a library is still supported before importing to 
+will eventually have to come to terms with. So do take note of whether a library is still supported before importing to 
 your project. Given time, I hope to address these items. 
-With no dependency management system and JARS checked into Git, knowing what is used is difficult.
 
 ## Finally
 This will be a slow linear process, added as I go through the book. I will start at chapter 2, and march forward.
-Eventually , a parent pom will emerge eventually.
+Eventually , a complete parent pom will emerge.
 
 # Apress Source Code
 
