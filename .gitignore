@@ -2,6 +2,7 @@
 #IntelliJ
 *.iml
 .idea
+out
 
 #Ant
 build
