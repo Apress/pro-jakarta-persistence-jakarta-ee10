@@ -12,41 +12,31 @@ import examples.model.EmployeeService;
 public class EmployeeTest {
 
     public static void main(String[] args) {
-        EntityManagerFactory emf = 
+        EntityManagerFactory emf =
                 Persistence.createEntityManagerFactory("EmployeeService");
         EntityManager em = emf.createEntityManager();
 
-/*  Need to get derby to auto generate DDL
-        em.getTransaction().begin();
-
-        String sql = "CREATE TABLE EMPLOYEE (id int primary key, name varchar(128),salary int)";
-        em.getTransaction().
-        statement.execute(sql);
-
-        em.getTransaction().commit();
-*/
         EmployeeService service = new EmployeeService(em);
-        
+
         //  create and persist an employee
         em.getTransaction().begin();
-        Employee emp = service.createEmployee(158, "John Doe", 45000);
+        Employee emp1 = service.createEmployee(158, "John Doe", 45000);
         em.getTransaction().commit();
-        System.out.println("Persisted " + emp);
-        
+        System.out.println("Persisted " + emp1);
+
         // find a specific employee
-        emp = service.findEmployee(158);
-        System.out.println("Found " + emp);
-        
+        System.out.println("Found " + service.findEmployee(158));
+
         // find all employees
         Collection<Employee> emps = service.findAllEmployees();
-        for (Employee e : emps) 
-            System.out.println("Found Employee: " + e);
+        for (Employee emp : emps)
+            System.out.println("Found Employee: " + emp);
         
         // update the employee
         em.getTransaction().begin();
-        emp = service.raiseEmployeeSalary(158, 1000);
+        Employee emp2 = service.raiseEmployeeSalary(158, 1000);
         em.getTransaction().commit();
-        System.out.println("Updated " + emp);
+        System.out.println("Updated " + emp2);
 
         // remove an employee
         em.getTransaction().begin();

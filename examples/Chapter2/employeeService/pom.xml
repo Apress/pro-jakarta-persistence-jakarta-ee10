@@ -2,7 +2,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- The Basics -->
     <groupId>apress.jakarta.persistence.ee10.ch2</groupId>
     <artifactId>employess-service</artifactId>
     <version>1.0.0</version>
@@ -12,7 +11,7 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <derby.java11.version>10.15.2.0</derby.java11.version>
+        <derby.java11.version>10.1.2.0</derby.java11.version>
     </properties>
     <dependencies>
         <dependency>
