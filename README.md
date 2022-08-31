@@ -2,6 +2,7 @@
 
 # To use
 Import the pom.xml into your IDE.
+
 Status : Chapter 2 complete.
 
 # Goal: It Just works
