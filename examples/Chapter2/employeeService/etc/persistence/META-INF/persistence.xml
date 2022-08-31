@@ -7,10 +7,10 @@
         <class>examples.model.Employee</class>
         <validation-mode>NONE</validation-mode>
         <properties>
-            <property name="jakarta.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:hsqldb:file:target/EmpServDB;shutdown=true"/>
-            <property name="jakarta.persistence.jdbc.user" value="user"/>
-            <property name="jakarta.persistence.jdbc.password" value="password"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:derby:target/EmpServDB;create=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="APP"/>
+            <property name="jakarta.persistence.jdbc.password" value="APP"/>
             <property name="eclipselink.ddl-generation" value="create-tables"/>
             <!-- enable this property to see SQL and other logging -->
             <!-- property name="eclipselink.logging.level" value="FINE"/ -->
