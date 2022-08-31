@@ -36,7 +36,7 @@ public class EmployeeTestInteractive {
                     case 'A':
                         System.out.println("Enter int value for employee id: \n\t\t\t");
                         try {
-                            id = new Integer(in.readLine());
+                            id = Integer.valueOf(in.readLine());
                         } catch (NumberFormatException e) {
                             break;
                         }
@@ -47,7 +47,7 @@ public class EmployeeTestInteractive {
                         System.out.println("Enter long value for employee salary: \n\t\t\t");
                         long salary = 0;
                         try {
-                            salary = new Long(in.readLine());
+                            salary = Long.valueOf(in.readLine());
                         } catch (NumberFormatException e) {
                             break;
                         }
@@ -69,7 +69,7 @@ public class EmployeeTestInteractive {
                     case 'R':
                         System.out.println("Enter int value for employee id: \n\t\t\t");
                         try {
-                            id = new Integer(in.readLine());
+                            id = Integer.valueOf(in.readLine());
                         } catch (NumberFormatException e) {
                             break;
                         }
