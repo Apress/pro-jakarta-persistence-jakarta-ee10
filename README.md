@@ -2,6 +2,7 @@
 
 # To use
 Import the pom.xml into your IDE.
+Status : Chapter 2 complete.
 
 # Goal: It Just works
 To provide a 'it just works' experience for myself that others should be able to use.
