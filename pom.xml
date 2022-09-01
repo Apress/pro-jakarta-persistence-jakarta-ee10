@@ -5,8 +5,7 @@
     <groupId>apress.jakarta.persistence.ee10</groupId>
     <artifactId>ee10-parent</artifactId>
     <version>1.0.0</version>
-    <name>Parent BOM</name>
-    <description>Chapter 2 Employees</description>
+    <description>ee10 Parent</description>
 
     <packaging>pom</packaging>
     <properties>

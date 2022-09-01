@@ -11,7 +11,6 @@
 
     <artifactId>ch2-employess-service</artifactId>
     <version>1.0.0</version>
-    <name>Chapter 2 Employees</name>
     <description>Chapter 2 Employees</description>
 
     <packaging>jar</packaging>

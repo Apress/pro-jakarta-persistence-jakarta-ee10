@@ -11,7 +11,6 @@
 
     <artifactId>ch3-01-slsb-model</artifactId>
     <version>1.0.0</version>
-    <name>ch3-01-slsb-model</name>
     <description>Chapter 3 01 Stateless Service Bean Model</description>
 
     <packaging>jar</packaging>

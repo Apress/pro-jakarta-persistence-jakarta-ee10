@@ -5,7 +5,6 @@
     <groupId>apress.jakarta.persistence.ee10</groupId>
     <artifactId>ch3-01-slsb-module</artifactId>
     <version>1.0.0</version>
-    <name>Parent BOM</name>
     <description>Chapter 3 01-slsb</description>
 
     <packaging>pom</packaging>
