@@ -12,6 +12,7 @@
             <property name="jakarta.persistence.jdbc.user" value="APP"/>
             <property name="jakarta.persistence.jdbc.password" value="APP"/>
             <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="derby.stream.error.file" value="target/derby.log"/>
             <!-- enable this property to see SQL and other logging -->
             <!-- property name="eclipselink.logging.level" value="FINE"/ -->
         </properties>
