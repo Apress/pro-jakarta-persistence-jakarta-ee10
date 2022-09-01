@@ -40,11 +40,16 @@ IDE to convert a project it into its internal build system, which is an advantag
 
 **Code Organization**
 
-The book used ANT patterns such as building multiple applications from the same directory.
-Those other applications are typically test harnesses, and it is not easily maintainable or tractable as organized.
-Ideally those would each be separate maven modules. Since APress book GitHub repos seldom get updated I will eventually 
-go ahead and create separate modules since its unlikely that this fork will get upstreamed.
+The book used ANT patterns such as separating logically different groups of code, architectural layers,  
+such as the business model, client, servlet, into different directory trees yet still under the same build directory.
+In real applications these would be libraries or services and the current layout is not easily maintainable or tractable as organized.
+We could of use maven plugins such as *build-helper-maven-plugin* to retain the existing directory structure. However,  
+IDE's have a limited support of 3rd party plugins when importing. The easiest alternatives are:
+1) Combine source directories together for convenience.
+2) Use separate maven modules for each layer
 
+The former approach most closely matches the authors original intent to show a layered architecture, and will be followed throughout.
+likely
 **Stale Tech Stack**
 
 With no dependency management system and JARS checked into Git, knowing what is used is difficult.
