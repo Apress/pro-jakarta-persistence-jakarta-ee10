@@ -5,7 +5,7 @@
     <groupId>apress.jakarta.persistence.ee10</groupId>
     <artifactId>ee10-parent</artifactId>
     <version>1.0.0</version>
-    <name>BOM</name>
+    <name>Parent BOM</name>
     <description>Chapter 2 Employees</description>
 
     <packaging>pom</packaging>
@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <derby.version>10.14.2.0</derby.version>
         <hsqldb.version>2.7.0</hsqldb.version>
-        <java.version>8</java.version>
+        <java.version>17</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
     </properties>
     <dependencies>
