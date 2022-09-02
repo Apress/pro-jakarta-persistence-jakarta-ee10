@@ -5,8 +5,8 @@ Import the pom.xml into your IDE.
 
 Status : 
 * Chapter 2 complete.
-* Chapter 3 : Example 01,02
-              03 - Seems to not be working under GlassFish and TomEE 10.0.21
+* Chapter 3 : Example 01,02,03
+              03 - Throws a Class Cast exception when  shutting down TomEE Plus 10.0.21
 
 
 # Goal: It Just works

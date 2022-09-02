@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>apress.jakarta.persistence.ee10</groupId>
-            <artifactId>ch3-02-slsb-model</artifactId>
+            <artifactId>ch3-03-slsb-model</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
