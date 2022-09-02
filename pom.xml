@@ -21,16 +21,12 @@
             <artifactId>jakarta.persistence-api</artifactId>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>eclipselink</artifactId>
-        </dependency>
         <!-- Test dependencies below -->
     </dependencies>
 
     <modules>
         <module>examples/Chapter2/employeeService</module>
-        <module>examples/Chapter3/01-slsbExample</module>
+        <module>examples/Chapter3</module>
     </modules>
     <build>
         <pluginManagement>
