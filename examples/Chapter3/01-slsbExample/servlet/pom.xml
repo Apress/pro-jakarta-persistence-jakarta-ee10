@@ -7,7 +7,6 @@
         <version>1.0.0</version>
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
-    <groupId>apress.jakarta.persistence.ee10</groupId>
     <artifactId>ch3-01-slsb-servlet</artifactId>
     <version>1.0.0</version>
     <description>Chapter 3 01 Stateless Session Bean Servlet</description>
