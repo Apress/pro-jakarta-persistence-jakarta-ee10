@@ -1,12 +1,19 @@
 # Add a maven build system for:  *Pro Jakarta Persistence in Jakarta EE 10*
-
-# To use
-Import the pom.xml into your IDE.
-
-Status : 
+# Status :
 * Chapter 2 complete.
-* Chapter 3 : Example 01,02,03
-              03 - Throws a Class Cast exception when  shutting down TomEE Plus 10.0.21
+* Chapter 3 : Example 01,02,03,04
+
+
+# Building
+
+To Build targeting Derby Db
+
+    mvn clean package
+
+There are other build options described [later](#other-build-options)
+
+# IDE Usage
+Import the pom.xml into your IDE.
 
 
 # Goal: It Just works
@@ -21,7 +28,7 @@ This means:
 * Target Java 17
 * Ability to switch between derby and hsqldb
 
-## Switching between Databases
+## Other build options
 By default, *derby* is used as the underlying Database.
 
     mvn clean package
@@ -30,8 +37,8 @@ If you want to use *hsqldb* , activate the *hsqldb* maven profile.
 
     mvn -P hsqldb clean package
 
-During this process I often had to use hsqldb initially to get it to work due to its better documentation and adoption.
-then switch back to derby afterwards. Similarly, H2 could be an alternate target since its adoption has accelerated 
+During this process it was useful to use hsqldb initially to get it to work due to its better documentation and adoption.
+then switch back to derby afterwards. Similarly, H2 is also a good alternate db for learning
 due to its Spring Boot connection.
 
 ## Maven vs Gradle
