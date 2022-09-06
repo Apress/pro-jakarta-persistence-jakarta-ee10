@@ -45,7 +45,7 @@ due to its Spring Boot connection.
 While I have used both, maven by its very design is a constrained, somewhat inflexible build system out of the box.
 However, that inflexibility by its very nature makes debugging problems straight forward, predictable, 
 and hence its use. In addition, while IDE's can run/build Gradle projects using gradle, the use of maven allows your
-IDE to convert a project it into its internal build system, which is an advantage.
+IDE to convert a project into its internal build system, which is an advantage.
 
 ## Weaknesses of the original book environment
 
@@ -54,7 +54,7 @@ IDE to convert a project it into its internal build system, which is an advantag
 The book used ANT patterns such as separating logically different groups of code, architectural layers,  
 such as the business model, client, servlet, into different directory trees yet still under the same build directory.
 In real applications these would be libraries or services and the current layout is not easily maintainable or tractable as organized.
-We could of use maven plugins such as *build-helper-maven-plugin* to retain the existing directory structure. However,  
+We could of course use a maven plugins such as *build-helper-maven-plugin* to retain the existing directory structure. However,  
 IDE's have a limited support of 3rd party plugins when importing. The easiest alternatives are:
 1) Combine source directories together for convenience.
 2) Use separate maven modules for each layer
