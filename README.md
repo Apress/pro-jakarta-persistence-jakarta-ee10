@@ -1,8 +1,26 @@
 # Add a maven build system for:  *Pro Jakarta Persistence in Jakarta EE 10*
 # Status :
 * Chapter 2 complete.
-* Chapter 3 : Example 01,02,03,04
+* Chapter 3 : Example 01,02,03,04,05 
 
+Notes:
+
+05: Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info. 
+
+This could be resolved using a Spring profile, or by using XML as Example 02 does.
+
+* Chapter 4:
+* Chapter 5:
+* Chapter 6:
+* Chapter 7:
+* Chapter 8:
+* Chapter 9:
+* Chapter 10:
+* Chapter 11:
+* Chapter 12:
+* Chapter 13:
+* Chapter 14:
+* Chapter 15:
 
 # Building
 
@@ -25,7 +43,7 @@ This means:
 * Generated files will be ignored by Git
 
 ## Other changes
-* Target Java 17
+* Target Java 17 - But should build under Java 11 if desired.
 * Ability to switch between derby and hsqldb
 
 ## Other build options

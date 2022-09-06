@@ -3,18 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>apress.jakarta.persistence.ee10</groupId>
-    <artifactId>ch3</artifactId>
+    <artifactId>ch3-05-module</artifactId>
     <version>1.0.0</version>
-    <description>Chapter 3 Examples</description>
+    <description>Chapter 3 05 Stateful Session Bean Lifecycle Example</description>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>01-slsbExample</module>
-        <module>02-slsbNoInterfaceExample</module>
-        <module>03-slsbLifecycleExample</module>
-        <module>04-sfsbExample</module>
-        <module>05-sfsbLifecycleExample</module>
+        <module>model</module>
+        <module>servlet</module>
     </modules>
 
 

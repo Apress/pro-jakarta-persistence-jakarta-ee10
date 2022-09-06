@@ -9,9 +9,9 @@
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>ch3-04-sfsb-model</artifactId>
+    <artifactId>ch3-05-sfsb-model</artifactId>
     <version>1.0.0</version>
-    <description>Chapter 3 04 Stateful Service Bean</description>
+    <description>Chapter 3 05 Stateful Lifecycle</description>
 
     <packaging>jar</packaging>
 
