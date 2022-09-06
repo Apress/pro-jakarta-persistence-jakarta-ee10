@@ -65,26 +65,27 @@ However, that inflexibility by its very nature makes debugging problems straight
 and hence its use. In addition, while IDE's can run/build Gradle projects using gradle, the use of maven allows your
 IDE to convert a project into its internal build system, which is an advantage.
 
-## Weaknesses of the original book environment
+## Original book environment
 
 **Code Organization**
 
 The book used ANT patterns such as separating logically different groups of code, architectural layers,  
 such as the business model, client, servlet, into different directory trees yet still under the same build directory.
-In real applications these would be libraries or services and the current layout is not easily maintainable or tractable as organized.
-We could of course use a maven plugins such as *build-helper-maven-plugin* to retain the existing directory structure. However,  
+In real applications these would be libraries or services. That layout while convenient,  is tractable as organized.
+We could use a maven plugins such as *build-helper-maven-plugin* to retain the existing directory structure. However,  
 IDE's have a limited support of 3rd party plugins when importing. The easiest alternatives are:
-1) Combine source directories together for convenience.
+1) Combine source directories together for convenience under src/main/java.
 2) Use separate maven modules for each layer
 
-The former approach most closely matches the authors original intent to show a layered architecture, and will be followed throughout.
-likely
-**Stale Tech Stack**
+The former approach most closely matches the authors original intent to show a layered architecture, and will be used.
 
-With no dependency management system and JARS checked into Git, knowing what is used is difficult.
-Technology changes quickly, vulnerabilities seem to pop up everywhere, so professional developers eventually learn
-the wisdom of keeping their tech stack up to date for applications. Unfortunately, this repository uses EOL  
-libraries such as JUnit 4 for their development. There is also an Oracle stored procedure JAR from almost 20 years ago I 
+**Unknown dependency versions**
+
+With no dependency management system and JARS checked into Git, knowing what versions are used is very time consuming.
+Technology changes quickly, vulnerabilities seem to pop up everywhere. Professional developers eventually learn
+the wisdom and sanity of using dependency management to keep their tech stack up to date.
+
+There is also an Oracle stored procedure JAR from almost 20 years ago I 
 will eventually have to come to terms with. So do take note of whether a library is still supported before importing to 
 your project. Given time, I hope to address these items. 
 
