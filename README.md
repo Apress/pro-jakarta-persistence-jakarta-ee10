@@ -1,29 +1,21 @@
 # Add a maven build system for:  *Pro Jakarta Persistence in Jakarta EE 10*
 # Status :
+
+Most Examples have an added README.md which documents the startup URL.
+
 * Chapter 2 complete.
 
-| Example                                | TomcatEE 9 | GlassFish 6 | Derby | Hssqldb | Comments                                                                                                                                                                                                                                             |
-|----------------------------------------|:----------:|:-----------:|:-----:|:-------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Example                                | TomcatEE 9 | GlassFish 6 | Derby | Hssqldb | Comments                                                                                                                                                                                                                                                  |
+|----------------------------------------|:----------:|:-----------:|:-----:|:-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Chapter 3**                          |
 | 01 Stateless Session Bean              |     Y      |      Y      |  NA   |   NA    |
 | 02 Stateless Session Bean No Interface |     Y      |      Y      |  NA   |   NA    |
 | 03 Stateless Session Bean Lifecycle    |     Y      |      Y      |  NA   |   NA    |
 | 04 Stateful Session Bean               |     Y      |      Y      |  NA   |   NA    |
 | 05 Stateful Session Bean Lifecycle     |     Y      |      Y      |   Y   |    N    | Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info.<br/> This could be resolved using a Spring profile, or by using XML as Example 02 does. |
-| 06 Singleton Session Bean              |     N      |      N      |  NA   |   NA    | Also tried EE5 version of source code with GlassFish 05, no luck.                                                                                                                                                                                    |
+| 06 Singleton Session Bean              |     N      |      N      |  NA   |   NA    | Also tried EE5 version of source code with GlassFish 05, no luck.                                                                                                                                                                                         |
 | 07 Servlet Example                     |     Y      |      Y      |  NA   |   NA    |
-
-
-Notes:
-
-05:  
-
-
-
-Example 06- Stateful EJB was not able to get to work. I tried TomEE and GlassFish
-Also tried the ee8 version in GlassFish 5.1 with the same results.
-
-Example 07 - Does not work
+| 08 Dependency Lookup                   |     N      |      Y      |  NA   |   NA    | TomEE failed with LifeCycle validation error |
 
 
 * Chapter 4:
