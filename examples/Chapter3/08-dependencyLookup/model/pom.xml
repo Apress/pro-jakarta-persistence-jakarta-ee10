@@ -11,7 +11,7 @@
 
     <artifactId>ch3-08-dependency-model</artifactId>
     <version>1.0.0</version>
-    <description>Chapter 3 05 Dependency Lookup Model</description>
+    <description>Chapter 3 08 InitialContext Dependency Lookup Model</description>
 
     <packaging>jar</packaging>
 

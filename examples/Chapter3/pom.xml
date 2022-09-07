@@ -18,6 +18,7 @@
 	    <module>06-singletonExample</module>
         <module>07-servletExample</module>
         <module>08-dependencyLookup</module>
+        <module>09-ejbContextLookup</module>
     </modules>
 
 
