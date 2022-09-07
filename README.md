@@ -1,13 +1,24 @@
 # Add a maven build system for:  *Pro Jakarta Persistence in Jakarta EE 10*
 # Status :
 * Chapter 2 complete.
-* Chapter 3 : Complete: Example 01,02,03,04,05
+
+| Example                                | TomcatEE 9 | GlassFish 6 | Derby | Hssqldb | Comments                                                                                                                                                                                                                                             |
+|----------------------------------------|:----------:|:-----------:|:-----:|:-------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Chapter 3**                          |
+| 01 Stateless Session Bean              |     Y      |      Y      |  NA   |   NA    |
+| 02 Stateless Session Bean No Interface |     Y      |      Y      |  NA   |   NA    |
+| 03 Stateless Session Bean Lifecycle    |     Y      |      Y      |  NA   |   NA    |
+| 04 Stateful Session Bean               |     Y      |      Y      |  NA   |   NA    |
+| 05 Stateful Session Bean Lifecycle     |     Y      |      Y      |   Y   |    N    | Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info.<br/> This could be resolved using a Spring profile, or by using XML as Example 02 does. |
+| 06 Singleton Session Bean              |     N      |      N      |  NA   |   NA    | Also tried EE5 version of source code with GlassFish 05, no luck.                                                                                                                                                                                    |
+| 07 Servlet Example                     |     N      |      N      |  NA   |   NA    | This is very simple so not sure why this does not work                                                                                                                                                                                               |
+
 
 Notes:
 
-05: Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info. 
+05:  
 
-This could be resolved using a Spring profile, or by using XML as Example 02 does.
+
 
 Example 06- Stateful EJB was not able to get to work. I tried TomEE and GlassFish
 Also tried the ee8 version in GlassFish 5.1 with the same results.
