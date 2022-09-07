@@ -9,8 +9,8 @@ Notes:
 
 This could be resolved using a Spring profile, or by using XML as Example 02 does.
 
-Chapter 03 Example 06- Stateful EJB was not able to get to work. I tried TomEE and GlashFish
-Also tried the ee0 version in GlassFish 5.1 and it 
+Chapter 03 Example 06- Stateful EJB was not able to get to work. I tried TomEE and GlassFish
+Also tried the ee8 version in GlassFish 5.1 with the same results.
 
 
 * Chapter 4:
