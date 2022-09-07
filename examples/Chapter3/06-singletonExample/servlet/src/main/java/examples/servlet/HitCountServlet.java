@@ -11,7 +11,7 @@ import jakarta.servlet.annotation.WebServlet;
 
 import jakarta.ejb.EJB;
 
-import model.examples.singleton.HitCounter;
+import examples.singleton.HitCounter;
 
 @WebServlet(name="HitCountServlet", 
             urlPatterns="/HitCountServlet")
@@ -58,7 +58,7 @@ public class HitCountServlet extends HttpServlet {
         out.println("<hr/>");
         out.println("<form action=\"HitCountServlet\" method=\"GET\">");
         out.println("<input name=\"list\" type=\"submit\" value=\"Get Count\"/>");
-        out.println("<input name=\"increment\" type=\"submit\" value=\"Incremement Count\"/>");
+        out.println("<input name=\"increment\" type=\"submit\" value=\"Increment Count\"/>");
         out.println("<input name=\"reset\" type=\"submit\" value=\"Reset Count\"/>");
         out.println("</form>");
     }

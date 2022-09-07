@@ -1,13 +1,17 @@
 # Add a maven build system for:  *Pro Jakarta Persistence in Jakarta EE 10*
 # Status :
 * Chapter 2 complete.
-* Chapter 3 : Example 01,02,03,04,05 
+* Chapter 3 : Complete: Example 01,02,03,04,05
 
 Notes:
 
 05: Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info. 
 
 This could be resolved using a Spring profile, or by using XML as Example 02 does.
+
+Chapter 03 Example 06- Stateful EJB was not able to get to work. I tried TomEE and GlashFish
+Also tried the ee0 version in GlassFish 5.1 and it 
+
 
 * Chapter 4:
 * Chapter 5:
@@ -82,7 +86,7 @@ The former approach most closely matches the authors original intent to show a l
 **Unknown dependency versions**
 
 With no dependency management system and JARS checked into Git, knowing what versions are used is very time consuming.
-Technology changes quickly, vulnerabilities seem to pop up everywhere. Professional developers eventually learn
+Technology changes quickly, and vulnerabilities seem to pop up everywhere. Professional developers eventually learn
 the wisdom and sanity of using dependency management to keep their tech stack up to date.
 
 There is also an Oracle stored procedure JAR from almost 20 years ago I 

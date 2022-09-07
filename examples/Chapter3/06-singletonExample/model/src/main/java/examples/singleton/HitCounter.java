@@ -1,4 +1,4 @@
-package model.examples.singleton;
+package examples.singleton;
 
 import jakarta.ejb.Singleton;
 

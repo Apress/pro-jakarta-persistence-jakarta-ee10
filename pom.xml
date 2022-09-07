@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <derby.version>10.14.2.0</derby.version>
         <hsqldb.version>2.7.0</hsqldb.version>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
     </properties>
     <dependencies>
@@ -31,11 +31,6 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>3.2.0</version>
-                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -70,6 +65,11 @@
                 <groupId>jakarta.persistence</groupId>
                 <artifactId>jakarta.persistence-api</artifactId>
                 <version>3.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>2.1.1</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.servlet</groupId>

@@ -9,9 +9,9 @@
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>ch3-03-slsb-model</artifactId>
+    <artifactId>ch3-06-sfsb-model</artifactId>
     <version>1.0.0</version>
-    <description>Chapter 3 03 Stateless Service Bean LifeCycle</description>
+    <description>Chapter 3 06 Stateful lifecycle Model</description>
 
     <packaging>jar</packaging>
 
@@ -25,6 +25,7 @@
             <artifactId>jakarta.annotation-api</artifactId>
             <scope>provided</scope>
         </dependency>
+
         <!-- Test dependencies below -->
     </dependencies>
 </project>
