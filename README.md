@@ -11,7 +11,7 @@
 | 04 Stateful Session Bean               |     Y      |      Y      |  NA   |   NA    |
 | 05 Stateful Session Bean Lifecycle     |     Y      |      Y      |   Y   |    N    | Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info.<br/> This could be resolved using a Spring profile, or by using XML as Example 02 does. |
 | 06 Singleton Session Bean              |     N      |      N      |  NA   |   NA    | Also tried EE5 version of source code with GlassFish 05, no luck.                                                                                                                                                                                    |
-| 07 Servlet Example                     |     N      |      N      |  NA   |   NA    | This is very simple so not sure why this does not work                                                                                                                                                                                               |
+| 07 Servlet Example                     |     Y      |      Y      |  NA   |   NA    |
 
 
 Notes:

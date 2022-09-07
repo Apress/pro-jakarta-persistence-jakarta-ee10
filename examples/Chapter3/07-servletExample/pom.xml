@@ -13,13 +13,11 @@
     <description>Chapter 3 07 Servlet Example</description>
 
     <packaging>war</packaging>
+
     <build>
-        <resources>
-            <resource>
-                <directory>src/servlet</directory>
-            </resource>
-        </resources>
+        <sourceDirectory>src/servlet</sourceDirectory>
     </build>
+
     <dependencies>
         <dependency>
             <groupId>jakarta.servlet</groupId>
