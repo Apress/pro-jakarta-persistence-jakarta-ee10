@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>apress.jakarta.persistence.ee10</groupId>
+        <artifactId>ee10-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>ch2-employess-service</artifactId>
+    <version>1.0.0</version>
+    <description>Chapter 2 Employees</description>
+
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+        </dependency>
+        <!-- Test dependencies below -->
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src/model</sourceDirectory>
+        <testSourceDirectory>src/client</testSourceDirectory>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>derby</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>etc/persistence/derby</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+        <profile>
+            <id>hsqldb</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>etc/persistence/hsqldb</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

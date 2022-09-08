@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>apress.jakarta.persistence.ee10</groupId>
+        <artifactId>ee10-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../../../../pom.xml</relativePath>
+    </parent>
+    <artifactId>ch3-09-ejbcontext-lookup-servlet</artifactId>
+    <version>1.0.0</version>
+    <description>Chapter 3 09 EJB Context Lookup</description>
+
+    <packaging>war</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.ejb</groupId>
+            <artifactId>jakarta.ejb-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>apress.jakarta.persistence.ee10</groupId>
+            <artifactId>ch3-09-ejbcontext-lookup-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>apress.jakarta.persistence.ee10</groupId>
+        <artifactId>ee10-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>ch3-07-servlet</artifactId>
+    <version>1.0.0</version>
+    <description>Chapter 3 07 Servlet Example</description>
+
+    <packaging>war</packaging>
+
+    <build>
+        <sourceDirectory>src/servlet</sourceDirectory>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
