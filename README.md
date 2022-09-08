@@ -19,11 +19,11 @@ Most Examples have an added README.md which documents the startup URL.
 | 09 EJB Lookup                          |     N      |      Y    |     Y      |  NA   |     NA      |                                                                                                                                                                                                                                                           |                                                                                                                                                         |
 | 10 Field Injection                     |     Y      |      Y    |     Y      |  NA   |     NA      |                                                                                                                                                                                                                                                           |
 | 11 Setter Injection                    |     Y      |      Y    |     Y      |  NA   |     NA      |                                                                                                                                                                                                                                                           |
-| 12 CDI                                 |     N      |     N*    |     N      |   Y   |             | Original code as written will only work in Glassfish if persistence.xml is NOT deployed in WAR.<br/>  Use `mvn -P skip-persistence clean package`  to build this version                                                                                   |
+| 12 CDI                                 |     N      |     N*    |     N      |   Y   |             | Original code as written will only work in Glassfish if persistence.xml is NOT deployed in WAR.<br/>  Use `mvn -P skip-persistence clean package`  to build this version                                                                                  |
 | 13 Container Managed Transaction       |            |           |            |       |             | Skipped                                                                                                                                                                                                                                                   |
 | 14 Transactional Interceptor           |            |           |            |       |             | Skipped                                                                                                                                                                                                                                                   |
 | 15 User Transaction                    |            |           |            |       |             | Skipped                                                                                                                                                                                                                                                   |
-| 16 Employee Service                    |            |           |            |       |             |                                                                                                                                                                                                                                                           |
+| 16 Employee Service                    |            |           |            |       |             | Skipped                                                                                                                                                                                                                                                   |
 
 
 
@@ -41,7 +41,9 @@ Most Examples have an added README.md which documents the startup URL.
 * Chapter 15:
 
 GlassFish =- GlasFish 6.2.5
+
 TomcatEE 9 = TomEE 9 plus M-9
+
 WildFly 6 = Version 26.1.2
 
 # Building
