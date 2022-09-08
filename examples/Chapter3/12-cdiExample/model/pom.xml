@@ -9,9 +9,9 @@
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>ch3-11-setter-injection-model</artifactId>
+    <artifactId>ch3-12-cdi-model</artifactId>
     <version>1.0.0</version>
-    <description>Chapter 3 10 Field Injection Model</description>
+    <description>Chapter 3 12 CDI Model</description>
 
     <packaging>jar</packaging>
 
@@ -24,6 +24,16 @@
         <dependency>
             <groupId>jakarta.ejb</groupId>
             <artifactId>jakarta.ejb-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.enterprise</groupId>
+            <artifactId>jakarta.enterprise.cdi-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.inject</groupId>
+            <artifactId>jakarta.inject-api</artifactId>
             <scope>provided</scope>
         </dependency>
 

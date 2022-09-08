@@ -15,10 +15,11 @@ Most Examples have an added README.md which documents the startup URL.
 | 05 Stateful Session Bean Lifecycle     |     Y      |      Y      |            |   Y   |        N        | Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info.<br/> This could be resolved using a Spring profile, or by using XML as Example 02 does. |
 | 06 Singleton Session Bean              |     N      |      N      |            |  NA   |       NA        | Also tried EE5 version of source code with GlassFish 05, no luck.                                                                                                                                                                                         |
 | 07 Servlet Example                     |     Y      |      Y      |            |  NA   |       NA        |
-| 08 Dependency Lookup                   |     Y      |      Y      |     Y      |  NA   |       NA        | This Code was not an InitialContext example but instead is EJB Context like Example 09. I rewrote this use the InitailContext approach to match book. <br/>WildFly made it easy to find correct context string                                            |
+| 08 Dependency Lookup                   |     Y      |      Y      |     Y      |  NA   |       NA        | This Code was not an InitialContext example but instead used an EJB Context like Example 09. Rewritten to use the InitialContext approach to match book. <br/>WildFly made it easy to find correct context string                                         |
 | 09 EJB Lookup                          |     N      |      Y      |     Y      |   NA  |       NA        | Code is originally the same as Example 08 , except for some HTMl text. Seems to be redundant.                                                                                                                                                             |                                                                                                                                                         |
 | 10 Field Injection                     |     Y      |      Y      |     Y      |   NA  |       NA        |                                                                                                                                                                                                                                                           |
-| 11 Setter Injection                    |     Y      |      Y      |            |   NA  |       NA        |                                                                                                                                                                                                                                                           |
+| 11 Setter Injection                    |     Y      |      Y      |     Y      |   NA  |       NA        |                                                                                                                                                                                                                                                           |
+| 12 CDI                                 |     N      |      Y      |     N      |   NA  |       NA        |                                                                                                                                                                                                                                                           |
 
 
 
@@ -35,7 +36,8 @@ Most Examples have an added README.md which documents the startup URL.
 * Chapter 14:
 * Chapter 15:
 
-TomcatEE 9 = TomEE 9 plus
+GlassFish =- GlasFish 6.2.5
+TomcatEE 9 = TomEE 9 plus M-9
 WildFly 6 = Version 26.1.2
 
 # Building

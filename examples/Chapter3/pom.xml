@@ -21,6 +21,7 @@
         <module>09-ejbContextLookup</module>
         <module>10-fieldInjection</module>
         <module>11-setterInjection</module>
+        <module>12-cdiExample</module>
     </modules>
 
 
