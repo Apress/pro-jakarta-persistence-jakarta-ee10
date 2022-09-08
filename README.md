@@ -95,7 +95,9 @@ IDE to convert a project into its internal build system, which is an advantage.
 
 The book used ANT patterns such as separating logically different groups of code, architectural layers,  
 such as the business model, client, servlet, into different directory trees yet still under the same build directory.
-In real applications these would be libraries or services. That layout while convenient,  is tractable as organized.
+In real applications these would be libraries or services. That layout while convenient,  is intractable as organized 
+since we want a one-to-one mapping between module and produced artifacts.
+
 We could use a maven plugins such as *build-helper-maven-plugin* to retain the existing directory structure. However,  
 IDE's have a limited support of 3rd party plugins when importing. The easiest alternatives are:
 1) Combine source directories together for convenience under src/main/java.
