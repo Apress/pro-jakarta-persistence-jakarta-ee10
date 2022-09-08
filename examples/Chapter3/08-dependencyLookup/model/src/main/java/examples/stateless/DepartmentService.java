@@ -2,35 +2,30 @@ package examples.stateless;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.Resource;
-import jakarta.ejb.EJB;
-import jakarta.ejb.SessionContext;
-import jakarta.ejb.SessionBean;
-import jakarta.ejb.Stateless;
+import jakarta.ejb.*;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 
 @Stateless
-@EJB(name="audit", beanInterface=AuditService.class)
-public class DepartmentService implements SessionBean {
-    SessionContext context;
+@EJB(name="deptAudit", beanInterface=AuditService.class)
+public class DepartmentService  {
     AuditService audit;
 
-    public void setSessionContext(SessionContext context) { 
-        this.context = context; 
-    }
-    
     @PostConstruct
     public void init() {
-        audit = (AuditService) context.lookup("audit");
+        try {
+            Context ctx = new InitialContext();
+            audit = (AuditService) ctx.lookup("java:module/audit");
+        } catch (NamingException ex){
+            throw new EJBException(ex);
+        }
     }
 
     public String performAudit() {
         return audit.audit();
     }
-    
-    // SessionBean methods 
-    public void ejbRemove() {}
-    public void ejbPassivate() {}
-    public void ejbActivate() {}
 
-    // ...
 }
 
