@@ -50,6 +50,10 @@
             </build>
         </profile>
         <profile>
+            <id>skip-persistence</id>
+            <build/>
+        </profile>
+        <profile>
             <id>hsqldb</id>
             <build>
                 <resources>
