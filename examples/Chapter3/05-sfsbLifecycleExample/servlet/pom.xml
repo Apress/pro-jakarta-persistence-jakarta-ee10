@@ -26,7 +26,7 @@
         <dependency>
             <groupId>apress.jakarta.persistence.ee10</groupId>
             <artifactId>ch3-05-sfsb-model</artifactId>
-            <version>1.0.0</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

@@ -5,18 +5,19 @@ Most Examples have an added README.md which documents the startup URL.
 
 * Chapter 2 complete.
 
-| Example                                | TomcatEE 9 | GlassFish 6 | Derby | Hssqldb | Comments                                                                                                                                                                                                                                                  |
-|----------------------------------------|:----------:|:-----------:|:-----:|:-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Example                                | TomcatEE 9 | GlassFish 6 | WildFly 26 | Derby |     Hssqldb     | Comments                                                                                                                                                                                                                                                  |
+|----------------------------------------|:----------:|:-----------:|:----------:|:-----:|:---------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Chapter 3**                          |
-| 01 Stateless Session Bean              |     Y      |      Y      |  NA   |   NA    |
-| 02 Stateless Session Bean No Interface |     Y      |      Y      |  NA   |   NA    |
-| 03 Stateless Session Bean Lifecycle    |     Y      |      Y      |  NA   |   NA    |
-| 04 Stateful Session Bean               |     Y      |      Y      |  NA   |   NA    |
-| 05 Stateful Session Bean Lifecycle     |     Y      |      Y      |   Y   |    N    | Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info.<br/> This could be resolved using a Spring profile, or by using XML as Example 02 does. |
-| 06 Singleton Session Bean              |     N      |      N      |  NA   |   NA    | Also tried EE5 version of source code with GlassFish 05, no luck.                                                                                                                                                                                         |
-| 07 Servlet Example                     |     Y      |      Y      |  NA   |   NA    |
-| 08 Dependency Lookup                   |     N      |      Y      |  NA   |   NA    | TomEE failed to find EJB Resource in Department Service                                                                                                                                                                                                   |
-| 09 EJB Lookup                          |     N      |      Y      |  NA   |   NA    | Code is the same as Example 08 , except for some HTMl text. Functionally, the same as Example 08!|                                                                                                                                                         |
+| 01 Stateless Session Bean              |     Y      |      Y      |            |  NA   |       NA        |
+| 02 Stateless Session Bean No Interface |     Y      |      Y      |            |  NA   |       NA        |
+| 03 Stateless Session Bean Lifecycle    |     Y      |      Y      |            |  NA   |       NA        |
+| 04 Stateful Session Bean               |     Y      |      Y      |            |  NA   |       NA        |
+| 05 Stateful Session Bean Lifecycle     |     Y      |      Y      |            |   Y   |        N        | Only works with Derby due to [annotations](examples/Chapter3/05-sfsbLifecycleExample/model/src/main/java/examples/stateful/OrderBrowser.java) hardcoding db info.<br/> This could be resolved using a Spring profile, or by using XML as Example 02 does. |
+| 06 Singleton Session Bean              |     N      |      N      |            |  NA   |       NA        | Also tried EE5 version of source code with GlassFish 05, no luck.                                                                                                                                                                                         |
+| 07 Servlet Example                     |     Y      |      Y      |            |  NA   |       NA        |
+| 08 Dependency Lookup                   |     N      |      Y      |            |  NA   |       NA        | TomEE failed to find EJB Resource in Department Service                                                                                                                                                                                                   |
+| 09 EJB Lookup                          |     N      |      Y      |     Y      |   NA  |       NA        | Code is the same as Example 08 , except for some HTMl text. Functionally, the same as Example 08!                                                                                                                                                         |                                                                                                                                                         |
+| 10 Field Injection                     |     Y      |      Y      |     Y      |   NA  |       NA        |                                                                                                                                                                                                                                                           |
 
 
 
@@ -34,6 +35,7 @@ Most Examples have an added README.md which documents the startup URL.
 * Chapter 15:
 
 TomcatEE 9 = TomEE 9 plus
+WildFly 6 = Version 26.1.2
 
 # Building
 

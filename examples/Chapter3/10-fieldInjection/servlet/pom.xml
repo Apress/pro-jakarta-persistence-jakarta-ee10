@@ -7,9 +7,9 @@
         <version>1.0.0</version>
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
-    <artifactId>ch3-08-dependency-servlet</artifactId>
+    <artifactId>ch3-10-field-injection-servlet</artifactId>
     <version>1.0.0</version>
-    <description>Chapter 3 08 InitialContext Dependency Lookup</description>
+    <description>Chapter 3 10 Field Injection</description>
 
     <packaging>war</packaging>
     <dependencies>
@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>apress.jakarta.persistence.ee10</groupId>
-            <artifactId>ch3-08-dependency-model</artifactId>
+            <artifactId>ch3-10-field-injection-model</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
